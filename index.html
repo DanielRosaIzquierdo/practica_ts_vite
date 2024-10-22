@@ -1,0 +1,160 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite + TS</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div id="app"></div>
+
+  <div class="container-fluid">
+
+    <div class="row">
+      <div class="card col-5 m-2">
+        <div class="card-title">Busca una nueva actividad aleatoria</div>
+        <button id="btnNewActivity" type="button" class="btn btn-primary m-2">
+          Nueva actividad
+        </button>
+        <div id="card" class="card m-2" style="width: 18rem">
+          <img id="img" class="card-img-top" alt="img" />
+          <div class="card-body">
+            <h5 id="titulo" class="card-title"></h5>
+            <h6 id="subtitulo" class="card-subtitle mb-2 text-body-secondary"></h6>
+            <p id="texto" class="card-text"></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card col-5 m-2">
+        <div class="card-title">Busca una nueva actividad por tipo</div>
+        <div class="dropdown m-2">
+          <button class="btn btn-success dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Selecciona el tipo de actividad
+          </button>
+          <ul class="dropdown-menu">
+            <li>
+              <a id="btnNewActivityByTypeRelaxation" class="dropdown-item" href="#">Relajación</a>
+            </li>
+            <li>
+              <a id="btnNewActivityByTypeCooking" class="dropdown-item" href="#">Cocina</a>
+            </li>
+            <li>
+              <a id="btnNewActivityByTypeRecreational" class="dropdown-item" href="#">Recreacional</a>
+            </li>
+          </ul>
+        </div>
+
+        <div id="card2" class="card m-2" style="width: 18rem">
+          <img id="imgType" class="card-img-top" alt="img" />
+          <div class="card-body">
+            <h5 id="titulo2" class="card-title"></h5>
+            <h6 id="subtitulo2" class="card-subtitle mb-2 text-body-secondary"></h6>
+            <p id="texto2" class="card-text"></p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+
+
+  <script type="module" src="./src/main.ts"></script>
+</body>
+
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite + TS</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="bg-primary text-white p-1">
+    <h1 class="text-center">BoredApi</h1>
+    <p class="text-center">
+        Ideas por si te aburres
+    </p>
+</div>
+
+
+<div class="container-fluid d-flex flex-column justify-content-center align-items-center vh-100 mt-4">
+    <div class="row justify-content-center">
+
+      <div class="card col-5 m-2 text-center  p-3 d-flex align-items-center">
+        <div class="card-title h3">Busca una nueva actividad aleatoria</div>
+        <button id="btnNewActivity" type="button" class="btn btn-primary m-2">
+          Nueva actividad
+        </button>
+        <div id="card" class="card m-2" style="width: 18rem">
+          <img id="img" class="card-img-top" alt="img" />
+          <div class="card-body">
+            <h5 id="titulo" class="card-title"></h5>
+            <h6 id="subtitulo" class="card-subtitle mb-2 text-body-secondary"></h6>
+            <h6 id="subtituloAccesibilidad" class="card-subtitle mb-2 text-body-secondary"></h6>
+            <h6 id="subtituloNParticipantes" class="card-subtitle mb-2 text-body-secondary"></h6>
+            <p id="texto" class="card-text"></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card col-5 m-2 text-center p-3 d-flex align-items-center">
+        <div class="card-title h3">Busca una nueva actividad por tipo</div>
+        <div class="dropdown m-2">
+          <button class="btn btn-success dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Selecciona el tipo de actividad
+          </button>
+          <ul class="dropdown-menu">
+            <li>
+              <a id="btnNewActivityByTypeRelaxation" class="dropdown-item" href="#">Relajación</a>
+            </li>
+            <li>
+              <a id="btnNewActivityByTypeCooking" class="dropdown-item" href="#">Cocina</a>
+            </li>
+            <li>
+              <a id="btnNewActivityByTypeRecreational" class="dropdown-item" href="#">Recreacional</a>
+            </li>
+          </ul>
+        </div>
+
+        <div id="card2" class="card m-2" style="width: 18rem">
+          <img id="imgType" class="card-img-top" alt="img" />
+          <div class="card-body">
+            <h5 id="titulo2" class="card-title"></h5>
+            <h6 id="subtitulo2" class="card-subtitle mb-2 text-body-secondary"></h6>
+            <h6 id="subtituloAccesibilidad2" class="card-subtitle mb-2 text-body-secondary"></h6>
+            <h6 id="subtituloNParticipantes2" class="card-subtitle mb-2 text-body-secondary"></h6>
+            <p id="texto2" class="card-text"></p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script type="module" src="./src/main.ts"></script>
+</body>
+
+</html>
