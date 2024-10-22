@@ -27,7 +27,7 @@ export const getActivity = () => {
             getImage('img', actividad.type);
         }
 
-    }).catch((error) => console.log('error'));
+    }).catch((error) => console.log(error));
 
 }
 
@@ -47,7 +47,7 @@ export const getActivityByType = (type: string) => {
         document.getElementById('subtituloNParticipantes2')!.textContent = `participantes: ${actividad.participants}`;
         getImage('imgType', type);
 
-    }).catch((error) => console.log('error'));
+    }).catch((error) => console.log(error));
 
 }
 
