@@ -1,5 +1,5 @@
 import { Activity } from "./utils/activity";
-import { createClient, ErrorResponse, Photo, Photos, PhotosWithTotalResults } from 'pexels';
+import { createClient, ErrorResponse, PhotosWithTotalResults } from 'pexels';
 
 
 const endpoint = 'http://bored.api.lewagon.com/api/activity/';
